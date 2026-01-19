@@ -239,7 +239,7 @@ opacity: 1;
 .abox p{
     color: #fff;
 }
-.podcast{
+.podcast {
       padding-top: 40px;
     background: #1A0B2E;
 }
@@ -248,6 +248,7 @@ opacity: 1;
     justify-content: space-around;
     gap: 15px;
     padding: 23px;
+
 }
 .play-btn {
     background: linear-gradient(45deg , #F7E93F, #FB09B4,#9100F8 );
@@ -256,6 +257,7 @@ opacity: 1;
     animation: bounce 2s linear infinite;
    
 }
+
 @keyframes bounce {
     0%{
        box-shadow: 0px 0px 0px 0px #fb09b49c;
@@ -276,6 +278,7 @@ opacity: 1;
 .v-box{
     border-radius: 12px;
     background: #230E3D;
+    overflow: hidden;
 
 }
 .img-box{
@@ -310,7 +313,7 @@ opacity: 1;
     margin-bottom: 10px;
 }
 .video-des p {
-    color: #fff;
+    color: #dfdfdf;
     line-height: 22px;
     font-weight: 200;
     margin-bottom: 20px;
@@ -320,6 +323,69 @@ opacity: 1;
     color: #00ff88;
 
 }
+.host-intro {
+      padding: 40px;
+    background: #1A0B2E;
+}
+.host-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #351165;
+    padding: 25px;
+    border-radius: 20px;
+    
+}
+.host-des h3{
+  font-size: 35px;
+  color: #FFF;
+  margin-bottom: 15px;
+}
+.host-des p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #dfdfdf;
+    margin-bottom: 15px;
+
+}
+.social-icons{
+    display: flex;
+    gap: 30px;
+}
+footer{
+    background: url('../assets/footer-bg.png') no-repeat;
+    padding: 43px;
+    background-size: cover;
+    background-position: center;
+}
+.footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    color: #fff;
+    text-align: center;
+}
+.footer-flex h2{
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+}
+.footer-flex span{
+  background: linear-gradient(45deg , #F7E93F, #FB09B4,#9100F8 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.connect-icon{
+    display: flex;
+    gap:12px;
+    color: #fff;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
 @media screen and (max-width:576px) {
     ul{
    display: none !important;
@@ -353,5 +419,22 @@ opacity: 1;
 }
 .videos{
     flex-direction: column;
+}
+.host-card {
+    display: flex;
+  flex-direction: column;
+ 
+}
+.host-des h3{
+text-align: center;
+}
+.host-des p{
+text-align: center;
+
+}
+.social-icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
 }
 }
